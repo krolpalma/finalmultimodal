@@ -79,11 +79,11 @@ st.subheader("CONTROL WITH BUTTONS")
 st.text("Purple Light")
 
 if st.button('PURPLE ON'):
-    act2="turn the purple light on"
+    act1="turn the purple light on"
     client1= paho.Client("clientekp")                           
     client1.on_publish = on_publish                          
     client1.connect(broker,port)  
-    message =json.dumps({"Act2":act2})
+    message =json.dumps({"Act1":act1})
     ret= client1.publish("kpvy_ctrl", message)
  
     #client1.subscribe("Sensores")
