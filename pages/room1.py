@@ -79,7 +79,7 @@ st.subheader("CONTROL WITH BUTTONS")
 st.text("Purple Light")
 
 if st.button('PURPLE ON'):
-    act2="turn the yellow light on"
+    act2="turn the purple light on"
     client1= paho.Client("clientekp")                           
     client1.on_publish = on_publish                          
     client1.connect(broker,port)  
@@ -93,7 +93,7 @@ else:
     st.write('')
 
 if st.button('PURPLE OFF'):
-    act2="turn the yellow light off"
+    act2="turn the purple light off"
     client1= paho.Client("clientekp")                           
     client1.on_publish = on_publish                          
     client1.connect(broker,port)  
@@ -107,7 +107,7 @@ else:
 st.text("Green Light")
 
 if st.button('GREEN ON'):
-    act2="turn the blue light on"
+    act2="turn the green light on"
     client1= paho.Client("clientek2p")                           
     client1.on_publish = on_publish                          
     client1.connect(broker,port)  
@@ -121,7 +121,7 @@ else:
     st.write('')
 
 if st.button('GREEN OFF'):
-    act2="turn the blue light off"
+    act2="turn the green light off"
     client1= paho.Client("clientek2p")                           
     client1.on_publish = on_publish                          
     client1.connect(broker,port)  
