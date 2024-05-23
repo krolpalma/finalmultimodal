@@ -84,7 +84,7 @@ if st.button('PURPLE ON'):
     client1.on_publish = on_publish                          
     client1.connect(broker,port)  
     message =json.dumps({"Act2":act2})
-    ret= client1.publish("kpvp_ctrl", message)
+    ret= client1.publish("kpvy_ctrl", message)
  
     #client1.subscribe("Sensores")
     
@@ -98,7 +98,7 @@ if st.button('PURPLE OFF'):
     client1.on_publish = on_publish                          
     client1.connect(broker,port)  
     message =json.dumps({"Act2":act2})
-    ret= client1.publish("kpvp_ctrl", message)
+    ret= client1.publish("kpvy_ctrl", message)
   
     
 else:
@@ -112,7 +112,7 @@ if st.button('GREEN ON'):
     client1.on_publish = on_publish                          
     client1.connect(broker,port)  
     message =json.dumps({"Act2":act2})
-    ret= client1.publish("kpvg_ctrl", message)
+    ret= client1.publish("kpvb_ctrl", message)
  
     #client1.subscribe("Sensores")
     
@@ -126,7 +126,7 @@ if st.button('GREEN OFF'):
     client1.on_publish = on_publish                          
     client1.connect(broker,port)  
     message =json.dumps({"Act2":act2})
-    ret= client1.publish("kpvg_ctrl", message)
+    ret= client1.publish("kpvb_ctrl", message)
   
     
 else:
